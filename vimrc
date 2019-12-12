@@ -50,13 +50,14 @@ Plugin 'ciaranm/securemodelines'
 
 " File types, lint and syntax
 Plugin 'gabrielelana/vim-markdown'
-Plugin 'w0rp/ale'
+" Plugin 'dense-analysis/ale'
+Plugin 'scrooloose/syntastic'
 
 " Syntax
-Plugin 'maralla/validator.vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-commentary'
+
 
 " AutoComplete
 "Plugin 'Valloric/YouCompleteMe'
@@ -128,3 +129,9 @@ let g:AutoClosePreserveDotReg = 0
 let g:UltiSnipsExpandTrigger="<c-s>" 
 let g:UltiSnipsJumpForwardTrigger="<c-j>" 
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" Syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
