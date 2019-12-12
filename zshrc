@@ -49,3 +49,5 @@ export PATH="/home/cbanuelos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
 
 export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ "$TMUX" = "" ]; then tmux; fi
