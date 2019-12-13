@@ -57,6 +57,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Townk/vim-autoclose'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 
 
 " AutoComplete
