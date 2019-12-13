@@ -52,6 +52,8 @@ Plugin 'ciaranm/securemodelines'
 Plugin 'gabrielelana/vim-markdown'
 " Plugin 'dense-analysis/ale'
 Plugin 'scrooloose/syntastic'
+Plugin 'epilande/vim-es2015-snippets'
+Plugin 'epilande/vim-react-snippets'
 
 " Syntax
 Plugin 'Townk/vim-autoclose'
@@ -138,4 +140,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " You complete me
-let g:ycm_filetype_blacklist = {}
+"let g:ycm_filetype_blacklist = {}
