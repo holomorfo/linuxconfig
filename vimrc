@@ -17,6 +17,8 @@ set shiftwidth=4
 set expandtab
 set colorcolumn=72
 set tags=tags
+set foldmethod=syntax
+set foldlevel=2
 " set textwidth=80
 
 " Runtime path vundle, fzf, airline
@@ -113,11 +115,12 @@ inoremap <Right> <Esc><C-w>l
 nnoremap <Right> <C-w>l
 
 " Ctrl s saves
-nnoremap <c-s> :wa<CR>
-inoremap <c-s> <Esc>:wa<CR>
-vnoremap <c-s> <Esc>:wa<CR>
+" nnoremap <c-s> :wa<CR>
+" inoremap <c-s> <Esc>:wa<CR>
+" vnoremap <c-s> <Esc>:wa<CR>
 
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <c-b> :NERDTreeToggle<CR>
+inoremap <c-b> <ESC>:NERDTreeToggle<CR>
 :nmap foo :echo('your leader is "<Leader>"')<Esc>
 	
 
