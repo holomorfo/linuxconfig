@@ -15,7 +15,7 @@ set hidden
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set colorcolumn=72
+" set colorcolumn=72
 set tags=tags
 set foldmethod=syntax
 set foldlevel=2
@@ -43,7 +43,6 @@ Plugin 'tomasiser/vim-code-dark'
 Plugin 'itchyny/lightline.vim'
 Plugin 'flrnprz/plastic.vim'
 
-
 " Files
 Plugin 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plugin 'junegunn/fzf.vim'
@@ -68,7 +67,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 
-
 " AutoComplete
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
@@ -92,7 +90,7 @@ endif
 "set t_ut=
 set background=dark
 colorscheme codedark
-"colorscheme plastic
+" colorscheme solarized
 set hlsearch
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 hi clear SpellBad
@@ -136,8 +134,6 @@ let g:lightline = { 'colorscheme': 'simpleblack' }
 " https://stackoverflow.com/questions/13621845/vim-pumvisible-call-putting-in-random-text
 let g:AutoClosePreserveDotReg = 0
 
-
-
 " Util Snips
 let g:UltiSnipsExpandTrigger="<c-s>" 
 let g:UltiSnipsJumpForwardTrigger="<c-j>" 
@@ -155,3 +151,10 @@ let g:syntastic_check_on_wq = 0
 " NERD tree
 " let NERDTreeMinimalUI = 1
 " let NERDTreeDirArrows = 1
+
+" This is for solarized
+" syntax on
+" let g:solarized_termcolors=256
+" set t_Co=256 
+" set background=dark
+" colorscheme solarized
