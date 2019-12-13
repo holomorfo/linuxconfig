@@ -3,7 +3,7 @@
 syntax on
 
 " Status line 2 always, 1 if more than one
-set laststatus=1
+set laststatus=0
 set nocompatible              
 set wrap
 set linebreak
@@ -15,6 +15,9 @@ set hidden
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set colorcolumn=72
+set tags=tags
+" set textwidth=80
 
 " Runtime path vundle, fzf, airline
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -47,6 +50,7 @@ Plugin 'ciaranm/securemodelines'
 
 " Navigation
 " Install EasyMotion for cool search
+Plugin 'ap/vim-buftabline'
 
 " File types, lint and syntax
 Plugin 'gabrielelana/vim-markdown'
@@ -54,6 +58,7 @@ Plugin 'gabrielelana/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'epilande/vim-react-snippets'
+Plugin 'tell-k/vim-autopep8'
 
 " Syntax
 Plugin 'Townk/vim-autoclose'
@@ -95,7 +100,9 @@ hi SpellBad gui=undercurl
 
 " ==================================================
 " Bindings 
-nnoremap zf :FZF<CR>
+nnoremap zf :FZF ~<CR>
+nnoremap <c-p> :FZF<CR>
+inoremap <c-p> <ESC>:FZF<CR>
 nnoremap <F2> :set laststatus=1<CR>
 nnoremap <F3> :set laststatus=2<CR>
 
@@ -141,3 +148,7 @@ let g:syntastic_check_on_wq = 0
 
 " You complete me
 "let g:ycm_filetype_blacklist = {}
+
+" NERD tree
+" let NERDTreeMinimalUI = 1
+" let NERDTreeDirArrows = 1
