@@ -42,6 +42,7 @@ Plugin 'tomasiser/vim-code-dark'
 "Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim'
 Plugin 'flrnprz/plastic.vim'
+Plugin 'luochen1990/rainbow'
 
 " Files
 Plugin 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -158,3 +159,6 @@ let g:syntastic_check_on_wq = 0
 " set t_Co=256 
 " set background=dark
 " colorscheme solarized
+
+" Color brackets
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
