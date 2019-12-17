@@ -134,6 +134,10 @@ let g:lightline = { 'colorscheme': 'simpleblack' }
 " https://stackoverflow.com/questions/13621845/vim-pumvisible-call-putting-in-random-text
 let g:AutoClosePreserveDotReg = 0
 
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 " Util Snips
 let g:UltiSnipsExpandTrigger="<c-s>" 
 let g:UltiSnipsJumpForwardTrigger="<c-j>" 
