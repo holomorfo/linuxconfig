@@ -23,6 +23,7 @@ set foldlevel=2
 
 " Runtime path vundle, fzf, airline
 set rtp+=~/.vim/bundle/Vundle.vim
+" TODO: try COC for better autocompletion
 set rtp+=~/YouCompleteMe
 set rtp+=~/.fzf
 se rtp+=$HOME/.config/nvim/vim-airline/        
@@ -67,6 +68,8 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'mattn/emmet-vim'
 
 " AutoComplete
 "Plugin 'Valloric/YouCompleteMe'
@@ -166,3 +169,15 @@ let g:syntastic_check_on_wq = 0
 
 " Color brackets
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+" Color jsx
+let g:vim_jsx_pretty_colorful_config = 1 " default 0
+
+" Emmet
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
+
