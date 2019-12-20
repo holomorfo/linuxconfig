@@ -110,6 +110,9 @@ inoremap <c-p> <ESC>:FZF<CR>
 nnoremap <F2> :set laststatus=1<CR>
 nnoremap <F3> :set laststatus=2<CR>
 
+" Comment lines
+nnoremap <c-c> gcc
+
 " Navigate windows
 inoremap <Left> <Esc><C-w>h
 nnoremap <Left> <C-w>h
