@@ -54,6 +54,7 @@ Plugin 'ciaranm/securemodelines'
 " Navigation
 " Install EasyMotion for cool search
 Plugin 'ap/vim-buftabline'
+Plugin 'majutsushi/tagbar'
 
 " File types, lint and syntax
 Plugin 'gabrielelana/vim-markdown'
@@ -128,7 +129,8 @@ nnoremap <c-b> :NERDTreeToggle<CR>
 inoremap <c-b> <ESC>:NERDTreeToggle<CR>
 :nmap foo :echo('your leader is "<Leader>"')<Esc>
 	
-
+" Structure
+nmap <F8> :TagbarToggle<CR>
 " ==================================================
 " Variables definitions
 
