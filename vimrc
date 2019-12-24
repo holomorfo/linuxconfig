@@ -73,6 +73,7 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'mattn/emmet-vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plugin 'chrisbra/unicode.vim'
 " Plugin 'leafgarland/typescript-vim'
 
 " AutoComplete
