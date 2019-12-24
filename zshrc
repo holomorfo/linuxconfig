@@ -47,6 +47,9 @@ setopt noflowcontrol
 # Change user for other computers
 export PATH="/home/cbanuelos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/cbanuelos/.vimpkg/bin:/home/cbanuelos/dart-sass"
 
+# This is for AWS
+export PATH=/home/ec2-user/.local/bin:$PATH
+
 export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
