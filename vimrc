@@ -15,10 +15,10 @@ set hidden
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" set colorcolumn=72
 set tags=tags
 set foldmethod=syntax
 set foldlevel=2
+" set colorcolumn=72
 " set textwidth=80
 
 " Runtime path vundle, fzf, airline
@@ -41,7 +41,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tomasiser/vim-code-dark'
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-airline/vim-airline-themes'
-Plugin 'itchyny/lightline.vim'
+" Plugin 'itchyny/lightline.vim'
 Plugin 'flrnprz/plastic.vim'
 Plugin 'luochen1990/rainbow'
 
