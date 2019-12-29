@@ -34,6 +34,9 @@ se rtp+=$HOME/.config/nvim/vim-airline-themes/
 " Begin Plugins
 call vundle#begin()
 
+" Start page
+Plugin 'mhinz/vim-startify'
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
