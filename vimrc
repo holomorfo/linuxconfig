@@ -169,8 +169,8 @@ let g:syntastic_check_on_wq = 0
 "let g:ycm_filetype_blacklist = {}
 
 " NERD tree
-" let NERDTreeMinimalUI = 1
-" let NERDTreeDirArrows = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 " This is for solarized
 " syntax on
