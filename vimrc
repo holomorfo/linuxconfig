@@ -20,6 +20,8 @@ set foldmethod=syntax
 set foldlevel=2
 " set colorcolumn=72
 " set textwidth=80
+" Kitty backround bug
+let &t_ut=''
 
 " Runtime path vundle, fzf, airline
 set rtp+=~/.vim/bundle/Vundle.vim
