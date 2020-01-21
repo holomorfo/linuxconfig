@@ -135,6 +135,9 @@ nnoremap <Right> <C-w>l
 " nnoremap <c-s> :wa<CR>
 " inoremap <c-s> <Esc>:wa<CR>
 " vnoremap <c-s> <Esc>:wa<CR>
+inoremap <BS> echo('quiubole') 
+inoremap <Del> <NOP>
+
 
 nnoremap <c-b> :NERDTreeToggle<CR>
 inoremap <c-b> <ESC>:NERDTreeToggle<CR>
