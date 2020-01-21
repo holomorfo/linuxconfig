@@ -18,7 +18,7 @@ set expandtab
 set tags=tags
 set foldmethod=syntax
 set foldlevel=2
-" set colorcolumn=72
+set colorcolumn=80
 " set textwidth=80
 " Kitty backround bug
 let &t_ut=''
