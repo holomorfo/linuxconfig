@@ -24,6 +24,7 @@ export NNN_DE_FILE_MANAGER=nautilus
 alias trsh="gio trash"
 alias fo="xdg-open ."
 alias n="nnn"
+alias v="vifm ."
 alias x="exit"
 alias c='clear'
 alias vims='vim -S'
