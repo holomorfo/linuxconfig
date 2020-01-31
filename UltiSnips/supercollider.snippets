@@ -1,0 +1,15 @@
+snippet synd
+(
+ SynthDef("${1:synthname}",
+     {
+     arg ${2:arg1};
+     var ${3:var1};
+     $3 = ${4:write};
+     Out.ar(${5:outbus},${6:output})
+     }).store;
+)
+endsnippet
+
+snippet pbind
+\Pbind("${1:name}");
+endsnippet
