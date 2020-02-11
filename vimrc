@@ -25,7 +25,6 @@ let &t_ut=''
 
 " Runtime path vundle, fzf, airline
 set rtp+=~/.vim/bundle/Vundle.vim
-" TODO: try COC for better autocompletion
 set rtp+=~/YouCompleteMe
 set rtp+=~/.fzf
 se rtp+=$HOME/.config/nvim/vim-airline/        
@@ -47,7 +46,7 @@ Plugin 'tomasiser/vim-code-dark'
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'itchyny/lightline.vim'
-Plugin 'flrnprz/plastic.vim'
+" Plugin 'flrnprz/plastic.vim'
 Plugin 'luochen1990/rainbow'
 
 " Files
@@ -184,7 +183,7 @@ nmap <F8> :TagbarToggle<CR>
 let mapleader=","
 
 " Lightline
-let g:lightline = { 'colorscheme': 'simpleblack' }
+" let g:lightline = { 'colorscheme': 'simpleblack' }
 
 " Prevents bug entering random text
 " https://stackoverflow.com/questions/13621845/vim-pumvisible-call-putting-in-random-text
@@ -231,5 +230,4 @@ let g:user_emmet_settings = {
     \      'extends' : 'jsx',
     \  },
   \}
-
 
