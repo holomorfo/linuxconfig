@@ -231,3 +231,5 @@ let g:user_emmet_settings = {
     \  },
   \}
 
+" Supercollider
+let g:scFlash = 1
