@@ -9,7 +9,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git zsh-autosuggestions vi-mode)
+plugins=(git zsh-autosuggestions vi-mode zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 

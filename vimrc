@@ -37,9 +37,9 @@ call vundle#begin()
 
 " Start page
 Plugin 'mhinz/vim-startify'
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tweekmonster/startuptime.vim'
 
 " Visuals
 Plugin 'tomasiser/vim-code-dark'
