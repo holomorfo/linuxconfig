@@ -9,15 +9,15 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git zsh-autosuggestions vi-mode zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-EDITOR=vim
-export VISUAL=vim
-# PAGER=vim
+EDITOR=nvim
+export VISUAL=nvim
+# PAGER=nvim
 export NNN_DE_FILE_MANAGER=nautilus
 
 # JEDI aliases
@@ -27,7 +27,8 @@ alias n="nnn"
 alias v="vifm ."
 alias x="exit"
 alias c='clear'
-alias vims='vim -S'
+alias vims='nvim -S'
+alias vim='~/nvim.appimage'
 alias jn="jupyter notebook"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
@@ -51,7 +52,7 @@ export PATH="/home/cbanuelos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
 # This is for AWS
 export PATH=/home/ec2-user/.local/bin:$PATH
 
-export TERM=xterm-256color
+# export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ "$TMUX" = "" ]; then tmux; fi
