@@ -1,4 +1,9 @@
 
+Install 
+ramitos/jsctags
+Perlance/tstags
+
+Works with nvim
 
 
 Remember to add the source files to point to this directo:wqy
