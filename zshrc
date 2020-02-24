@@ -41,6 +41,15 @@ gsen() {
 	#do things with parameters like $1 such as
 	git add -A && git commit -m "$1" && git push
 }
+# Tmux
+alias tn="tmux new -s"
+alias ts="tmux switch -t"
+alias td="tmux detach"
+alias ta="tmux attach-session -t"
+alias tl="tmux list-sessions"
+alias tkill="tmux kill-session"
+alias tkills="tmux kill-session -t"
+
 
 stty start undef
 stty stop undef
@@ -55,4 +64,4 @@ export PATH=/home/ec2-user/.local/bin:$PATH
 # export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
