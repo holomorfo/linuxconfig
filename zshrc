@@ -15,8 +15,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-EDITOR=nvim
-export VISUAL=nvim
+EDITOR=vim
+export VISUAL=vim
 # PAGER=nvim
 export NNN_DE_FILE_MANAGER=nautilus
 
@@ -27,7 +27,7 @@ alias n="nnn"
 alias v="vifm ."
 alias x="exit"
 alias c='clear'
-alias vims='nvim -S'
+alias vims='vim -S'
 alias vim='~/nvim.appimage'
 alias jn="jupyter notebook"
 alias pbcopy='xclip -selection clipboard'
