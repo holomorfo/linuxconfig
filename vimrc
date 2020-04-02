@@ -10,7 +10,7 @@ set filetype=on
 set linebreak
 set number 
 set ignorecase 
-set spell
+" set spell
 set spelllang=en,es
 set hidden 
 set tabstop=4
@@ -38,6 +38,9 @@ call plug#begin('~/.vim/plugged')
 " Start page
 Plug 'mhinz/vim-startify'
 Plug 'tweekmonster/startuptime.vim'
+
+" Debugging
+Plug 'eliba2/vim-node-inspect'
 
 " Visuals
 Plug 'tomasiser/vim-code-dark'
@@ -177,6 +180,16 @@ nnoremap <c-b> :NERDTreeToggle<CR>
 inoremap <c-b> <ESC>:NERDTreeToggle<CR>
 :nmap foo :echo('your leader is "<Leader>"')<Esc>
 	
+" Node debugger
+nnoremap <silent><F4> :NodeInspectStart<cr>
+nnoremap <silent><F5> :NodeInspectRun<cr>
+nnoremap <silent><F6> :NodeInspectConnect("127.0.0.1:9229")<cr>
+nnoremap <silent><F7> :NodeInspectStepInto<cr>
+nnoremap <silent><F8> :NodeInspectStepOver<cr>
+nnoremap <silent><F9> :NodeInspectToggleBreakpoint<cr>
+nnoremap <silent><F10> :NodeInspectStop<cr>
+
+
 " Structure
 nmap <F8> :TagbarToggle<CR>
 let g:tagbar_type_typescript = {                                                  

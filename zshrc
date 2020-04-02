@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/cbanuelos/.oh-my-zsh"
 
+
 ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load?
@@ -15,8 +16,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-EDITOR=vim
-export VISUAL=vim
+EDITOR=~/nvim.appimage
+export VISUAL=~/nvim.appimage
 # PAGER=nvim
 export NNN_DE_FILE_MANAGER=nautilus
 
@@ -25,6 +26,7 @@ alias trsh="gio trash"
 alias fo="xdg-open ."
 alias n="nnn"
 alias v="vifm ."
+alias vi="~/nvim.appimage"
 alias x="exit"
 alias c='clear'
 alias vims='vim -S'
@@ -54,6 +56,7 @@ alias tkills="tmux kill-session -t"
 stty start undef
 stty stop undef
 setopt noflowcontrol
+
 
 # Change user for other computers
 export PATH="/home/cbanuelos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/cbanuelos/.vimpkg/bin:/home/cbanuelos/dart-sass"
