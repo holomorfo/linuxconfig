@@ -1,0 +1,30 @@
+" ==================================================
+" Settings
+syntax on
+
+" Status line 2 always, 1 if more than one
+set laststatus=0
+set nocompatible              
+set wrap
+set filetype=on
+set linebreak
+set number 
+set ignorecase 
+set spelllang=en,es
+set hidden 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set tags=tags
+set foldmethod=syntax
+set foldlevel=2
+
+" ==================================================
+" Visual setup
+set background=dark
+colorscheme gruvbox
+set hlsearch
+
+hi clear SpellBad
+hi SpellBad cterm=underline
+hi SpellBad gui=undercurl

@@ -16,8 +16,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-EDITOR=~/nvim.appimage
-export VISUAL=~/nvim.appimage
+EDITOR=vim
+export VISUAL=vim
 # PAGER=nvim
 export NNN_DE_FILE_MANAGER=nautilus
 
@@ -26,11 +26,9 @@ alias trsh="gio trash"
 alias fo="xdg-open ."
 alias n="nnn"
 alias v="vifm ."
-alias vi="~/nvim.appimage"
 alias x="exit"
 alias c='clear'
 alias vims='vim -S'
-alias vim='~/nvim.appimage'
 alias jn="jupyter notebook"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
@@ -40,8 +38,8 @@ alias gc="git add -A && git commit -m"
 alias ge="git add -A && git commit -m \"Update\" && git push"
 alias gp="git push"
 gsen() {
-	#do things with parameters like $1 such as
-	git add -A && git commit -m "$1" && git push
+    #do things with parameters like $1 such as
+    git add -A && git commit -m "$1" && git push
 }
 # Tmux
 alias tn="tmux new -s"
@@ -67,4 +65,4 @@ export PATH=/home/ec2-user/.local/bin:$PATH
 # export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux; fi
