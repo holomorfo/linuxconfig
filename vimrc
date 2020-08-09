@@ -24,6 +24,8 @@ set foldlevel=2
 " Kitty backround bug
 let &t_ut=''
 
+set wildignore=*/venv/*
+
 " Runtime path vundle, fzf
 " set rtp+=~/.vim/bundle/Vundle.vim
 " set rtp+=~/YouCompleteMe
@@ -34,6 +36,8 @@ set rtp+=~/.fzf
 " Begin Plugs
 " call vundle#begin()
 call plug#begin('~/.vim/plugged')
+
+Plug 'dyng/ctrlsf.vim'
 
 " Start page
 Plug 'mhinz/vim-startify'
@@ -383,6 +387,13 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" opens search results in a window w/ links and highlight the matches
+command! -nargs=+ G execute 'silent grep! --exclude-dir={node_modules,venv} -r -i <args> *' | copen 15
+
+
+
+
 
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that

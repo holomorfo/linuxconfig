@@ -2,6 +2,10 @@
 " Settings
 syntax on
 
+set path+=**
+
+" Shows autocomplete commands on bottom line
+set wildmenu
 " Status line 2 always, 1 if more than one
 set laststatus=0
 set nocompatible              
@@ -22,7 +26,10 @@ set foldlevel=2
 " ==================================================
 " Visual setup
 set background=dark
-colorscheme gruvbox
+" vimcolors.com
+" colorscheme gruvbox
+colorscheme simple-dark
+
 set hlsearch
 
 hi clear SpellBad
