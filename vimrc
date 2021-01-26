@@ -7,6 +7,7 @@ set laststatus=0
 set nocompatible              
 set wrap
 set filetype=on
+filetype plugin on
 set linebreak
 set number 
 set ignorecase 
@@ -67,7 +68,7 @@ Plug 'bling/vim-bufferline'
 Plug 'majutsushi/tagbar'
 
 " File types, lint and syntax
-" Plug 'gabrielelana/vim-markdown'
+Plug 'gabrielelana/vim-markdown'
 " Plug 'dense-analysis/ale'
 Plug 'scrooloose/syntastic'
 Plug 'epilande/vim-es2015-snippets'
@@ -95,8 +96,11 @@ Plug 'leafgarland/typescript-vim'
 
 " AutoComplete
 Plug 'SirVer/ultisnips'
+Plug 'joaohkfaria/vim-jest-snippets'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tidalcycles/vim-tidal'
+
 
 " All of your Plugs must be added before the following line
 call plug#end()
@@ -168,13 +172,20 @@ nnoremap <F3> :set laststatus=2<CR>
 nnoremap <c-c> gcc
 
 " Navigate windows
+inoremap <Up> <Esc><C-w>k
+nnoremap <Up> <C-w>k
+inoremap <Down> <Esc><C-w>j
+nnoremap <Down> <C-w>j
 inoremap <Left> <Esc><C-w>h
-nnoremap <Left> <C-w>h
+nnoremap <Left> <C-w>
 inoremap <Right> <Esc><C-w>l
 nnoremap <Right> <C-w>l
 
 " Ctrl s saves
-" nnoremap <c-s> :wa<CR>
+" nnoremap <Space>s :wa<CR>
+
+" Format
+" nnoremap <Space>i <Leaderf<CR>
 " inoremap <c-s> <Esc>:wa<CR>
 " vnoremap <c-s> <Esc>:wa<CR>
 " ioremap <BS> :echo('quiubole')<Esc>
