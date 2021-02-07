@@ -28,7 +28,7 @@ set foldlevel=2
 set background=dark
 " vimcolors.com
 " colorscheme gruvbox
-colorscheme simple-dark
+" colorscheme simple-dark
 
 set hlsearch
 
