@@ -66,8 +66,6 @@ export PATH="/home/cbanuelos/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
 
 # This is for AWS
 export PATH=/home/ec2-user/.local/bin:$PATH
-export JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
-export JDK_HOME=/usr/lib/jvm/java-11-amazon-corretto
 
 # export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

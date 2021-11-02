@@ -184,6 +184,8 @@ nnoremap <Right> <C-w>l
 " Ctrl s saves
 " nnoremap <Space>s :wa<CR>
 
+"
+inoremap jk <Esc>
 " Format
 " nnoremap <Space>i <Leaderf<CR>
 " inoremap <c-s> <Esc>:wa<CR>
